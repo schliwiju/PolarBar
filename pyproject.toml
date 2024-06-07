@@ -1,0 +1,28 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = [
+"setuptools >= 61.0",
+"wheel",
+# Include all files tracked by git (i.e. the *.vhd files)
+# https://setuptools.pypa.io/en/stable/userguide/datafiles.html
+"setuptools_scm>=6.2",
+]  # PEP 508 specifications.
+
+# [build-system]
+# requires = ["setuptools", "wheel"]
+# build-backend = "setuptools.build_meta"
+
+readme = "README.md"
+requires-python = ">=3.11"
+# license = {file = "LICENSE.txt"}
+keywords = ["astronomy", "data science"]
+
+[project]
+name = "PolarBar"
+version = "0.1.0"
+description = "A demonstration of the Polars library with astronomy data."
+authors = [{name = "Julian Schliwinski"}]
+dependencies = [
+    "polars>=0.14.0",
+    "matplotlib",
+]
