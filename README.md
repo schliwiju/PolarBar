@@ -16,5 +16,5 @@ pip install -e .
 After installation, you can run the module directly to see the plot of photon count rate over time:
 
 ```bash
-python -m polarbar.analysis
+python polarbar/analysis.py
 ```
